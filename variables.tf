@@ -9,5 +9,5 @@ variable "region" {
 variable "bucket_name" {
   description = "Unique name for S3 bucket"
   type        = string
-  default     = "meg-test-feb-23-2022"
+  default     = "yoda-test-feb-23-2022"
 }
