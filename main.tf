@@ -10,13 +10,13 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-west-2"
+  region = var.region
 }
 
 module "website_s3_bucket" {
   source = "./modules/aws-s3-static-website-bucket"
 
-  bucket_name = "yoda-test-feb-23-2022"
+  bucket_name = var.bucket_name
 
   tags = {
     Terraform   = "true"
